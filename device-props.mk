@@ -23,3 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GNSS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.overlay.izat.optin=rro
+
+# Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q845-05000-1
