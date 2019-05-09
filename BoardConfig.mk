@@ -38,7 +38,11 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
 # Recovery
+ifeq ($(BUILD_TWRP),true)
+include $(DEVICE_PATH)/twrp.mk
+else
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+endif
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/beryllium/BoardConfigVendor.mk
