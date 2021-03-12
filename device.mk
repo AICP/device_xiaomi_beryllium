@@ -18,6 +18,10 @@ $(call inherit-product, vendor/xiaomi-firmware/beryllium/firmware.mk)
 TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -75,9 +79,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7.vendor \
     vendor.display.config@1.8.vendor \
     vendor.display.config@1.9.vendor
-
-# GoogleCameraGo
-$(call inherit-product, packages/apps/GoogleCameraGo/gcam.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
