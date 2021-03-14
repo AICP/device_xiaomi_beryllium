@@ -2,17 +2,17 @@
   {
     "repository": "AICP/device_xiaomi_sdm845-common",
     "target_path": "device/xiaomi/sdm845-common",
-    "branch": "r11.1-staging"
+    "branch": "r11.1"
   },
   {
-    "repository": "PixelExperience-Devices/kernel_xiaomi_polaris",
-    "target_path": "kernel/xiaomi/beryllium",
-    "branch": "eleven"
+    "repository": "AICP/kernel_xiaomi_sdm845",
+    "target_path": "kernel/xiaomi/sdm845",
+    "branch": "r11.1"
   },
   {
+    "remote": "gitlab",
     "repository": "docHD/vendor_xiaomi_beryllium",
     "target_path": "vendor/xiaomi/beryllium",
-    "branch": "r11.1",
-    "remote": "gitlab"
+    "branch": "r11.1"
   }
 ]
